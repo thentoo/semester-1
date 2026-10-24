@@ -7,8 +7,12 @@
 
 destination = input("Where are you going to? ")
 
-distance_miles_input = input("How many miles will you travel? ")
-time_hours_input = input("How many hours will the journey take? ")
+distance_miles_input = int(input("How many miles will you travel? "))
+time_hours_input = int(input("How many hours will the journey take? "))
+
+avg_speed = distance_miles_input / time_hours_input;
+
+print(f"Average approx. speed: {avg_speed:.2f}")
 
 # TODO: convert distance_miles_input and time_hours_input to numbers
 # TODO: calculate the average speed in miles per hour
