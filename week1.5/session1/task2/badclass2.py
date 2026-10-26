@@ -12,10 +12,18 @@ class Point:
         """
         Creates a Point, given x & y coordinates.
         """
-        x = x_coordinate
-        y = y_coordinate
+        self.x = x_coordinate
+        self.y = y_coordinate
+    
+    def distance_squared(self, to_x, to_y):
+        x_dist = abs(to_x - self.x)
+        y_dist = abs(to_y - self.y)
+
+        return (x_dist * x_dist) + (y_dist * y_dist)
 
 
 p = Point(1.5, 2.0)
 print(p.x)
 print(p.y)
+
+print(p.distance_squared(1, 2))
