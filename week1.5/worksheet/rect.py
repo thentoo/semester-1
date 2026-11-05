@@ -20,12 +20,19 @@ class Rectangle:
             raise ValueError
 
     def is_square(self):
-        return (self.width == self.height)
-    
+        """
+        Returns True if the rectangle is a square, otherwise False.
+        """
+        return self.width == self.height
     def area(self):
+        """
+        Returns the area of the rectangle.
+        """
         return self.width * self.height
-    
     def perimeter(self):
+        """
+        Returns the perimeter of the rectangle.
+        """
         return 2 * (self.width + self.height)
 
 
