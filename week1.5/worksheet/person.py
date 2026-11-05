@@ -45,7 +45,3 @@ class Person:
 
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
-
-per = Person("", date(2007, 11, 5))
-print(per.initials())
-print(per.is_birthday())
