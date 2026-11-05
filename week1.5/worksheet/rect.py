@@ -13,5 +13,21 @@ class Rectangle:
         self.width = width
         self.height = height
 
+        if not(type(width) == int and type(height) == int):
+            raise TypeError
+        
+        if(width <= 0 or height <= 0):
+            raise ValueError
+
+    def is_square(self):
+        return (self.width == self.height)
+    
+    def area(self):
+        return self.width * self.height
+    
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+
     # Implement methods is_square(), area() & perimeter() here
     # (See README.md for details of what they should do)
